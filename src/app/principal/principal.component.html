@@ -1,0 +1,26 @@
+<div class="principal">
+  <!--String interpolation -->
+  <h2>{{titulo}}</h2>
+
+  <!--property binding and event binding -->
+  <button [disabled]="false" (click)="mostrar()">Mostrar Top</button>
+  <!--<p>{{estado}}</p>-->
+
+  <!-- Ejemplo de directiva estructural -->
+  <p *ngIf="muestro == true">Estoy mostrando los diez mas escuchados</p>
+  <ul class="artist">
+    <li *ngFor="let art of artist">
+      <h2>{{art.name}}</h2>
+      <img src="{{art.image[3]['#text']}}" />
+      <a href="{{art.url}}" target="_blank">Ir a página del artista</a>
+    </li>
+  </ul>
+  <br>
+  <br>
+  <!--Two way data binding -->
+  Buscar por pais: <input type="text" [(ngModel)]="texto">
+  <p>{{texto}}</p>
+  <br>
+  <br>
+  <br>
+</div>

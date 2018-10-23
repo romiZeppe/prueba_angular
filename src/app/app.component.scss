@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+
+.principal, .contact{
+  margin: 1em;
+}
+*{
+  font-family: 'Roboto';
+
+}
+.nav{
+  background-color: tomato;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: .5em 1em;
+      img{
+        width: 80px;
+        height: auto;
+      }
+  ul{
+    list-style-type: none;
+    flex:1;
+    text-align: right;
+    li{
+      display: inline-block;
+      margin-right: 15px;
+      a{
+        text-decoration: none;
+        font-family: 'Tahoma';
+        font-size: 1em;
+        color: #FFF;
+      }
+    }
+  }
+}
+
+.footer{
+  background-color: #FFF;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  p{
+    color:#333;
+    text-align: center;
+  }
+}
+
+.artist{
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  li{
+    width:30%;
+    margin: 1em;
+    padding: 0.5em 0;
+    border: 1px solid #FFF;
+    h2{
+      margin-top:.5em;
+    }
+    a{
+      margin-top: .5em;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
